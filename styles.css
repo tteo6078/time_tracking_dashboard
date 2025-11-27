@@ -35,7 +35,9 @@ body {
 
 .activity-tracker {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
 }
 
 .activity-menu {
@@ -96,13 +98,20 @@ body {
     color: white;
 }
 
+.activity-dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 1.5rem;
+}
+
 .activity-card {
     background-color: var(--navy-900);
     border-radius: 1rem;
     padding: 1.5rem;
 }
 
-.activity-card {
+.activity-card h1 {
     font-size: var(--fs);
     font-weight: 500;
     color: white;
