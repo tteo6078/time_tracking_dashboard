@@ -29,6 +29,7 @@
 body {
     font-family: var(--ff);
     display: grid;
+    justify-items: center;
     min-height: 100vh;
     background-color: var(--navy-950);
     margin: 1rem
