@@ -4,7 +4,7 @@ let data = [];
 
 // Load JSON once
 async function loadData() {
-    const res = await fetch('./data.json');
+    const res = await fetch('/data.json');
     data = await res.json();
     renderCards('daily'); // default view
 }
