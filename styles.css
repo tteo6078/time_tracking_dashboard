@@ -29,7 +29,7 @@ body {
     font-family: var(--ff);
     display: grid;
     min-height: 100vh;
-    /* background-color: var(--navy-950); */
+    background-color: var(--navy-950);
     margin: 1rem
 }
 
@@ -42,7 +42,7 @@ body {
 
 .activity-menu {
     overflow: hidden;
-    width: 100%;
+    display: grid;
 }
 
 .activity-menu .profile {
@@ -77,8 +77,9 @@ body {
 .activity-options {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
     justify-content: space-between;
+    padding: 1.5rem;
+    padding-top: 2rem;
     background-color: var(--navy-900);
     max-width: 11rem;
     border-radius: 0 0 1rem 1rem;
@@ -98,6 +99,10 @@ body {
     color: white;
 }
 
+.activity-options button:active{
+    color: white;
+}
+
 .activity-dashboard {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -107,7 +112,7 @@ body {
 
 .activity-card {
     display: grid;
-    grid-template-rows: 3.8rem 1fr;
+    grid-template-rows: 2.5rem 1fr;
     grid-template-columns: 1fr;
     overflow: hidden;
     border-radius: var(--radius);
@@ -125,15 +130,13 @@ body {
     grid-column: 1/2;
     background: var(--bg-color);
     display: grid;
-    place-items: start end;
-    height: 70%;
 }
 
 .activity-card__info {
     grid-row: 2/3;
     grid-column: 1/2;
     background-color: var(--navy-900);
-    padding: 1rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     border-radius: var(--radius);
@@ -147,7 +150,7 @@ body {
 }
 
 .activity-card p {
-    font-size: 32px;
+    font-size: 42px;
     font-weight: 300;
     color: white;
     margin-bottom: 0.5rem;
