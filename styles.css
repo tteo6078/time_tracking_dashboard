@@ -229,10 +229,6 @@ body {
         gap: 1.5rem;
     }
 
-    .activity-card {
-        min-width: none;
-    }
-
     .activity-card__info .time-container{
         display: flex;
         flex-direction: row;
