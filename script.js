@@ -4,9 +4,9 @@ let data = [];
 
 // Load JSON once
 async function loadData() {
-  const res = await fetch('./data.json');
-  data = await res.json();
-  renderCards('weekly'); // default view
+    const res = await fetch('./data.json');
+    data = await res.json();
+    renderCards('daily'); // default view
 }
 
 // Render cards dynamically
@@ -33,7 +33,10 @@ function renderCards(timeframe) {
         <img src="./images/icon-${className}.svg" alt="icon-${className}">
       </div>
       <div class="activity-card__info">
-        <h1>${activity.title}</h1>
+        <div class="activity-card__header">
+            <h1>${activity.title}</h1>
+            <button class="activity-card__menu">&#8230;</button>
+        </div>
         <div class="time-container">
             <p>${tf.current}hrs</p>
             <h2>${label} - ${tf.previous}hrs</h2>

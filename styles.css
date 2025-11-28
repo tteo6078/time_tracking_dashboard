@@ -16,7 +16,7 @@
     /* Neutral */
     --navy-950: hsl(226, 43%, 10%);
     --navy-900: hsl(235, 46%, 20%);
-    --navy-600: hsl(235, 29%, 35%);
+    --navy-700: hsl(235, 40%, 27%);
     --purple-500: hsl(235, 45%, 61%);
     --navy-200: hsl(236, 100%, 87%);
 }
@@ -96,11 +96,7 @@ body {
     cursor: pointer;
 }
 
-.activity-options button:hover {
-    color: white;
-}
-
-.activity-options button:active{
+.activity-options button:hover, button.active {
     color: white;
 }
 
@@ -117,7 +113,7 @@ body {
     grid-template-columns: 1fr;
     overflow: hidden;
     border-radius: var(--radius);
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 .activity-card.work { --bg-color: var(--orange-300); }
@@ -150,7 +146,7 @@ body {
 }
 
 .activity-card__info:hover {
-    background-color: var(--navy-600);
+    background-color: var(--navy-700);
 }
 
 .activity-card__header {
