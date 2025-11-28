@@ -29,11 +29,15 @@ function renderCards(timeframe) {
     const className = activity.title.toLowerCase().replace(/\s+/g, '-');
     card.className = `activity-card ${className}`;
     card.innerHTML = `
-      <div class="activity-card__bg"></div>
+      <div class="activity-card__bg">
+        <img src="./images/icon-${className}.svg" alt="icon-${className}">
+      </div>
       <div class="activity-card__info">
         <h1>${activity.title}</h1>
-        <p>${tf.current}hrs</p>
-        <h2>${label} - ${tf.previous}hrs</h2>
+        <div class="time-container">
+            <p>${tf.current}hrs</p>
+            <h2>${label} - ${tf.previous}hrs</h2>
+        </div>
       </div>
     `;
 
