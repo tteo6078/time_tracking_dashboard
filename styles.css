@@ -30,6 +30,7 @@ body {
     font-family: var(--ff);
     display: grid;
     min-height: 100vh;
+    justify-self: center;
     background-color: var(--navy-950);
     margin: 1rem
 }
@@ -105,7 +106,6 @@ body {
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(2, 1fr); 
     gap: 1.5rem;
-    max-width: 80%;
 }
 
 .activity-card {
@@ -227,7 +227,10 @@ body {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        max-width: 100%;
+    }
+
+    .activity-card {
+        min-width: none;
     }
 
     .activity-card__info .time-container{
