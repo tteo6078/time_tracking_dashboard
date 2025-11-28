@@ -30,7 +30,6 @@ body {
     font-family: var(--ff);
     display: grid;
     min-height: 100vh;
-    justify-items: center;
     background-color: var(--navy-950);
     margin: 1rem
 }
